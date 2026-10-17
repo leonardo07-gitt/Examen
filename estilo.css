@@ -1,0 +1,289 @@
+/* Estilos generales y variables */
+:root {
+  --color-primario: #c29b61;
+  --color-fondo-seccion: #f4f6f9;
+  --color-oscuro: #111d28;
+  --color-texto: #e91313;
+  --color-texto-claro: #666666;
+  --color-blanco: #ffffff;
+  --color-borde: #e1e8ed;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-texto);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.seccion {
+  padding: 80px 0;
+}
+
+.etiqueta {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-primario);
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+/* SECCIÓN: NOSOTROS */
+
+.nosotros {
+  background-color: #f8fafc;
+}
+
+.nosotros-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.nosotros-texto h2 {
+  font-size: 2.5rem;
+  color: var(--color-oscuro);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.nosotros-texto p {
+  color: var(--color-texto-claro);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Beneficios Grid (Tarjetas blancas) */
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.beneficio {
+  background-color: var(--color-blanco);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.beneficio-icono {
+  font-size: 1.2rem;
+  color: var(--color-primario);
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.beneficio h3 {
+  font-size: 1rem;
+  color: var(--color-oscuro);
+  margin: 0 0 8px 0;
+}
+
+.beneficio p {
+  font-size: 0.9rem;
+  color: var(--color-texto-claro);
+  margin: 0;
+}
+
+/* Botones */
+.boton {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.boton-principal {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+}
+
+.boton-principal:hover {
+  background-color: #b0894f;
+}
+
+
+/* SECCIÓN: CONTACTO */
+
+.contacto {
+  background-color: var(--color-blanco);
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contacto-texto h2 {
+  font-size: 2.2rem;
+  color: var(--color-oscuro);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.contacto-texto p {
+  color: var(--color-texto-claro);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Formulario */
+.formulario {
+  background-color: #f8fafc;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.formulario-fila {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.campo {
+  margin-bottom: 20px;
+}
+
+.campo label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-oscuro);
+  margin-bottom: 8px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid var(--color-borde);
+  border-radius: 6px;
+  background-color: var(--color-blanco);
+  font-size: 0.95rem;
+  color: var(--color-texto);
+  box-sizing: border-box;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: var(--color-primario);
+}
+
+.aceptacion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--color-texto-claro);
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.boton-enviar {
+  width: 100%;
+  font-size: 1rem;
+}
+
+
+/* SECCIÓN: PIE DE PÁGINA (FOOTER) */
+.pie-pagina {
+  background-color: #0b131a; 
+  color: var(--color-blanco);
+  padding: 60px 0 30px 0;
+}
+
+.pie-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.pie-pagina h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.pie-pagina h3 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--color-blanco);
+}
+
+.pie-pagina p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+.pie-pagina ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pie-pagina ul li {
+  margin-bottom: 10px;
+}
+
+.pie-pagina ul li a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.pie-pagina ul li a:hover {
+  color: var(--color-blanco);
+}
+
+.pie-inferior {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 25px;
+  text-align: center;
+}
+
+.pie-inferior p {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin: 0;
+}
+
+
+/* RESPONSIVO (Adaptabilidad para pantallas pequeñas) */
+
+@media (max-width: 900px) {
+  .nosotros-grid,
+  .contacto-grid,
+  .pie-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .beneficios-grid {
+    grid-template-columns: 1fr;
+  }
+}
